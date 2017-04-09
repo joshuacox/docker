@@ -55,8 +55,8 @@ RUN curl -sSL https://github.com/REMnux/docker/raw/master/metasploit/conf/databa
 RUN curl -sSL https://rvm.io/mpapis.asc | gpg --import
 RUN curl -L https://get.rvm.io | bash -s stable 
 RUN /bin/bash -l -c "rvm requirements"
-RUN /bin/bash -l -c "rvm install 2.3.1"
-RUN /bin/bash -l -c "rvm use 2.3.1 --default"
+RUN /bin/bash -l -c "rvm install 2.3"
+RUN /bin/bash -l -c "rvm use 2.3 --default"
 RUN /bin/bash -l -c "source /usr/local/rvm/scripts/rvm"
 RUN /bin/bash -l -c "gem install bundler --no-ri --no-rdoc"
 RUN /bin/bash -l -c "source /usr/local/rvm/scripts/rvm && which bundle"
